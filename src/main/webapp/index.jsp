@@ -90,7 +90,7 @@
                     <p class="about-description">In partnerships with
                         multiple vendors and journals, Stud-y is also your one-stop shop for academic resources.</p>
                     <div class="d-flex flex-row">
-                        <button class="btn" id="btn-ai">AI-Ready</button>
+                        <button class="btn mr-2" id="btn-ai">AI-Ready</button>
                         <button class="btn" id="btn-bkshop">Bookshop</button>
                     </div>
                 </div>
@@ -107,14 +107,14 @@
                 <div class="justify-content-left col-4">
                     <img src="assets/img/Looking%20through%201.png" alt="guy looking through binoculars">
                 </div>
-                <div class="col-8 d-flex flex-column align-content-center">
+                <div class="col-8 d-flex flex-column align-self-center align-items-center">
                     <p class="text-white" id="text-contact">Be the first to know</p>
                     <form method="post" action="RegisterServlet" name="myForm">
                         <input type="text" name="email"
                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                               placeholder="Email" class="form-control form-control-lg w-75 border-0 bg-white mr-2"
+                               placeholder="Email" class="form-control form-control-lg bg-white mr-2"
                                required>
-                        <input type="submit" value="Subscribe" class="btn text-white py-3 px-5" id="subscribe-btn">
+                        <input type="submit" value="Subscribe" class="btn text-white py-2 px-5" id="subscribe-btn">
                     </form>
                     <p class="card bg-danger text-white py-3" id="fail">Please fill email appropriately
                         <button type="button" class="close" id="close-f">&times;</button>
