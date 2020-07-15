@@ -110,18 +110,17 @@
                 <div class="justify-content-left col-4">
                     <img src="assets/img/Looking%20through%201.png" alt="guy looking through binoculars">
                 </div>
-                <div class="col-8">
+                <div class="col-8 d-flex flex-column align-content-center">
                     <p class="text-white" id="text-contact">Be the first to know</p>
-                    <form method="post" action="RegisterServlet" class="d-flex flex-row align-content-center"
-                          name="myForm">
+                    <form method="post" action="RegisterServlet" name="myForm">
                         <input type="text" name="email"
                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                                placeholder="Email" class="form-control form-control-lg w-75 border-0 bg-white mr-2"
                                required>
                         <input type="submit" value="Subscribe" class="btn text-white py-3 px-5" id="subscribe-btn">
                     </form>
-                    <p class="card bg-danger text-white py-3 d-none" id="fail">Please fill email appropriately</p>
-                    <p class="card bg-success text-white py-3 d-none" id="success">Subscription successful</p>
+                    <p class="card bg-danger text-white py-3" id="fail">Please fill email appropriately</p>
+                    <p class="card bg-success text-white py-3" id="success">Subscription successful</p>
                 </div>
             </div>
         </div>

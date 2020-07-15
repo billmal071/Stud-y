@@ -119,4 +119,8 @@ body {
     border-radius: 0;
 }
 
+#fail, #success {
+    display: none;
+}
+
 
