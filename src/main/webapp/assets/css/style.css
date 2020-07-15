@@ -68,36 +68,11 @@ body {
 .position-images {
     position: relative;
 }
-
+/*
 .phone {
     position: relative;
     z-index: 3;
-}
-
-.phone-1 {
-    background: linear-gradient(270deg, #FCE304 5.27%, #E18027 100%);
-    box-shadow: 12.0613px 18.0919px 39.1992px rgba(0, 0, 0, 0.07);
-    width: 325px;
-    height: 286px;
-    border-radius: 50%;
-}
-
-.phone-2 {
-    background: linear-gradient(73.41deg, #03BB79 10.34%, #A6FF4E 91.94%);
-    box-shadow: 10.9703px 16.4555px 35.6535px rgba(0, 0, 0, 0.07);
-    width: 325px;
-    height: 286px;
-    border-radius: 50%;
-}
-
-.phone-3 {
-    background: linear-gradient(270deg, #09CACA 7.01%, #0085BE 88.45%);
-    /* circular shadow */
-    box-shadow: 20px 30px 65px rgba(0, 0, 0, 0.07);
-    width: 325px;
-    height: 286px;
-    border-radius: 50%;
-}
+}*/
 
 .circle-1 {
     position: absolute;
@@ -106,6 +81,11 @@ body {
 }
 
 .circle-2 {
+    position: absolute;
+    top: 47.5%;
+}
+
+.circle-3 {
     position: absolute;
     top: 47.5%;
 }

@@ -50,7 +50,8 @@
         <div class="d-flex flex-row justify-content-center pt-3">
             <div>
                 <div class="">
-                    <img src="assets/img/phone.png" class="phone-1" alt="phone with image"/>
+                    <img src="assets/img/phone.png" class="phone" alt="phone with image"/>
+                    <img src="assets/img/yellowcircle.png" class="circle-1" alt="">
                 </div>
                 <div>
                     <h3 class="steps">step 1</h3>
@@ -59,7 +60,8 @@
             </div>
             <div>
                 <div class="position-images">
-                    <img src="assets/img/phone.png" class="phone-2" alt="phone with image"/>
+                    <img src="assets/img/phone.png" class="phone" alt="phone with image"/>
+                    <img src="assets/img/greencircle.png" class="circle-2" alt="">
                 </div>
                 <div>
                     <h3 class="steps">step 2</h3>
@@ -68,7 +70,8 @@
             </div>
             <div>
                 <div>
-                    <img src="assets/img/phone.png" class="phone-3" alt="phone with image"/>
+                    <img src="assets/img/phone.png" class="phone" alt="phone with image"/>
+                    <img src="assets/img/bluecircle.png" class="circle-3" alt="">
                 </div>
                 <div>
                     <h3 class="steps">step 3</h3>
