@@ -106,10 +106,10 @@
     <section class="bg-yellow">
         <div class="container">
             <div class="d-flex flex-row justify-content-center">
-                <div class="justify-content-left">
+                <div class="justify-content-left col-4">
                     <img src="assets/img/Looking%20through%201.png" alt="guy looking through binoculars">
                 </div>
-                <div class="">
+                <div class="col-8">
                     <p>Be the first to know</p>
                     <form method="post" action="RegisterServlet" class="row form-control form-control-lg align-items-center">
                         <div class="col-8">

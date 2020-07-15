@@ -1,5 +1,6 @@
 package bean;
 
+import java.net.URI;
 import java.net.URISyntaxException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -21,8 +22,14 @@ public class DBconnection {
                 e.printStackTrace();
             }*/
             //con = DriverManager.getConnection(url, username, password); //attempting to connect to MySQL database
-            String dbUrl = System.getenv("JDBC_DATABASE_URL");
-            con = DriverManager.getConnection(dbUrl);
+            /*String dbUrl = System.getenv("JDBC_DATABASE_URL");
+            con = DriverManager.getConnection(dbUrl);*/
+            URI dbUri = new URI(System.getenv("DATABASE_URL"));
+
+            String username = dbUri.getUserInfo().split(":")[0];
+            String password = dbUri.getUserInfo().split(":")[1];
+            String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath() + "?sslmode=require";
+            con = DriverManager.getConnection(dbUrl, username, password);
             System.out.println("Printing connection object " + con);
         } catch (Exception e) {
             e.printStackTrace();

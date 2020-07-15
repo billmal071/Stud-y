@@ -15,6 +15,8 @@ public class RegisterServlet extends HttpServlet {
         //Copying all the input parameters in to local variables
         String email = request.getParameter("email");
 
+        //unirest
+
         RegisterBean registerBean = new RegisterBean();
         //Using Java Beans - An easiest way to play with group of related data
         registerBean.setEmail(email);
