@@ -105,6 +105,13 @@ body {
     background-color: var(--yellow);
 }
 
+#text-contact {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+}
+
 #subscribe-btn {
     background-color: var(--blue);
     font-size: 16px;

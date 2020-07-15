@@ -85,9 +85,10 @@
     <section>
         <div class="container">
             <div class="d-flex flex-row justify-content-center">
-                <div>
+                <div class="col-6">
                     <h3 class="about-text">About Stud-y</h3>
-                    <p class="about-description">Stud-y uses MiraGlance Technologies, an AI-ready computer vision solution, to scan texts and
+                    <p class="about-description">Stud-y uses MiraGlance Technologies, an AI-ready computer vision
+                        solution, to scan texts and
                         cross-reference them with our vast libraries of books and research papers.</p>
                     <p class="about-description">In partnerships with
                         multiple vendors and journals, Stud-y is also your one-stop shop for academic resources.</p>
@@ -96,7 +97,7 @@
                         <button class="btn">Bookshop</button>
                     </div>
                 </div>
-                <div>
+                <div class="col-6">
                     <img src="assets/img/study-phone.png" alt="phone with study">
                 </div>
             </div>
@@ -110,14 +111,10 @@
                     <img src="assets/img/Looking%20through%201.png" alt="guy looking through binoculars">
                 </div>
                 <div class="col-8">
-                    <p>Be the first to know</p>
-                    <form method="post" action="RegisterServlet" class="row form-control form-control-lg align-items-center">
-                        <div class="col-8">
-                            <input type="text" name="email">
-                        </div>
-                        <div class="col-4">
-                            <input type="submit" value="Subscribe" class="btn text-white" id="subscribe-btn">
-                        </div>
+                    <p id="text-contact">Be the first to know</p>
+                    <form method="post" action="RegisterServlet" class="align-items-center">
+                        <input type="text" name="email">
+                        <input type="submit" value="Subscribe" class="btn text-white" id="subscribe-btn">
                     </form>
                 </div>
             </div>

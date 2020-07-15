@@ -30,7 +30,7 @@ public class DBconnection {
             String password = dbUri.getUserInfo().split(":")[1];
             String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath() + "?sslmode=require";
             con = DriverManager.getConnection(dbUrl, username, password);
-            System.out.println("Printing connection object " + con);
+            System.out.println("Printing connection object " + con.getSchema());
         } catch (Exception e) {
             e.printStackTrace();
         }
