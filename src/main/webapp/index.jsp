@@ -114,7 +114,7 @@
                     <form method="post" action="RegisterServlet" name="myForm">
                         <input type="email" name="email"
                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                               placeholder="Email" class="bg-white form=control form-c py-3 mr-2"
+                               placeholder="Email" class="bg-white form-control form-control-lg py-3 mr-2"
                                required>
                         <input type="submit" value="Subscribe" class="btn text-white py-2 px-5" id="subscribe-btn">
                     </form>
