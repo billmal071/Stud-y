@@ -89,7 +89,7 @@
                         cross-reference them with our vast libraries of books and research papers.</p>
                     <p class="about-description">In partnerships with
                         multiple vendors and journals, Stud-y is also your one-stop shop for academic resources.</p>
-                    <div class="d-flex flex-row">
+                    <div class="d-flex flex-row mt-2">
                         <button class="btn mr-2" id="btn-ai">AI-Ready</button>
                         <button class="btn" id="btn-bkshop">Bookshop</button>
                     </div>
@@ -112,7 +112,7 @@
                     <form method="post" action="RegisterServlet" name="myForm">
                         <input type="text" name="email"
                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                               placeholder="Email" class="form-control form-control-lg bg-white mr-2"
+                               placeholder="Email" class="bg-white mr-2"
                                required>
                         <input type="submit" value="Subscribe" class="btn text-white py-2 px-5" id="subscribe-btn">
                     </form>

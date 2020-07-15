@@ -46,7 +46,7 @@ body {
     border-radius: 45px;
     font-size: 16px;
     line-height: 19px;
-    color: var(--blue);
+    color: var(--blue) !important;
 }
 
 /* how it works */
@@ -109,8 +109,7 @@ body {
     font-weight: bold;
     font-size: 24px;
     line-height: 29px;
-    /*text-decoration: underline;*/
-    border-bottom: 2px solid var(--black);
+    text-decoration: underline;
     color: var(--black);
 }
 
@@ -124,7 +123,7 @@ body {
 }
 
 #btn-ai, #btn-bkshop {
-    border: 2px solid var(--btn-color);
+    border: 1px solid var(--btn-color);
     box-sizing: border-box;
     border-radius: 8px;
     font-weight: bold;
@@ -149,7 +148,8 @@ input[type='text'] {
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
-    width: 60%;
+    width: 100%;
+    display: inline-block;
 }
 
 #subscribe-btn {
@@ -157,6 +157,7 @@ input[type='text'] {
     font-size: 16px;
     line-height: 19px;
     border-radius: 0;
+    display: inline-block;
 }
 
 #fail, #success {
