@@ -50,7 +50,7 @@
 
     <section class="container px-3 justify-content-center">
         <h3 class="pb-5 mb-5" id="text-direct">How it Works?</h3>
-        <div class="d-flex flex-row justify-content-center pt-3">
+        <div class="d-flex flex-row justify-content-center pt-3" uk-scrollspy="cls: uk-animation-slide-bottom; target: >div; delay: 300; repeat: true">
             <div class="col-4 justify-content-center text-center">
                 <div class="">
                     <img src="assets/img/Frame37.png" alt="">
@@ -60,7 +60,7 @@
                     <p class="steps-text">Take a picture or screenshot of a portion of the book.</p>
                 </div>
             </div>
-            <div class="col-4 justify-content-center text-center">
+            <div class="col-4 justify-content-center text-center" uk-scrollspy-class="uk-animation-slide-top">
                 <div class="">
                     <img src="assets/img/Frame38.png" alt="">
                 </div>
@@ -111,10 +111,10 @@
                 </div>
                 <div class="col-8 d-flex flex-column align-self-center align-items-center">
                     <p class="text-white" id="text-contact">Be the first to know</p>
-                    <form method="post" action="RegisterServlet" name="myForm" class="d-flex flex-row">
+                    <form method="post" action="RegisterServlet" name="myForm">
                         <input type="email" name="email"
                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                               placeholder="Email" class="bg-white py-3 mr-2"
+                               placeholder="Email" class="bg-white form=control form-c py-3 mr-2"
                                required>
                         <input type="submit" value="Subscribe" class="btn text-white py-2 px-5" id="subscribe-btn">
                     </form>
