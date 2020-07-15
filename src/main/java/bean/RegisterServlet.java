@@ -28,14 +28,14 @@ public class RegisterServlet extends HttpServlet {
 
         if(userRegistered.equals("SUCCESS"))   //On success, you can display a message to user on Home page
         {
-            response.sendRedirect("/index.jsp?successful");
+            response.sendRedirect("/index.jsp?error");
             //request.getRequestDispatcher("/index.jsp?successful").forward(request, response);
         }
         else   //On Failure, display a meaningful message to the User.
         {
             //request.setAttribute("errMessage", userRegistered);
             //request.getRequestDispatcher("/Register.jsp").forward(request, response);
-            response.sendRedirect("index.jsp?error");
+            response.sendRedirect("index.jsp?successful");
         }
     }
 }

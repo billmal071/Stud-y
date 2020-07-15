@@ -49,7 +49,7 @@
     <section class="container px-3 justify-content-center">
         <h3 class="pb-5 mb-5" id="text-direct">How it Works?</h3>
         <div class="d-flex flex-row justify-content-center pt-3">
-            <div class="col-4">
+            <div class="col-4 justify-content-center text-center">
                 <div class="">
                     <img src="assets/img/phone.png" class="phone" alt="phone with image"/>
                     <!--<img src="assets/img/yellowcircle.png" class="circle-1" alt="">-->
@@ -59,7 +59,7 @@
                     <p class="steps-text">Take a picture or screenshot of a portion of the book.</p>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-4 justify-content-center text-center">
                 <div class="">
                     <img src="assets/img/phone.png" class="phone" alt="phone with image"/>
                     <!--<img src="assets/img/greencircle.png" class="circle-2" alt="">-->
@@ -69,7 +69,7 @@
                     <p class="steps-text">Tap ‘Upload’</p>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-4 justify-content-center text-center">
                 <div>
                     <img src="assets/img/phone.png" class="phone" alt="phone with image"/>
                     <!--<img src="assets/img/bluecircle.png" class="circle-3" alt="">-->
@@ -113,7 +113,7 @@
                 <div class="col-8">
                     <p id="text-contact">Be the first to know</p>
                     <form method="post" action="RegisterServlet" class="align-items-center">
-                        <input type="text" name="email" placeholder="Email" class="form-control form-control-lg border-0 bg-white">
+                        <input type="text" name="email" placeholder="Email" class="form-control form-control-lg w-75 border-0 bg-white">
                         <input type="submit" value="Subscribe" class="btn text-white py-2 px-5" id="subscribe-btn">
                     </form>
                 </div>
