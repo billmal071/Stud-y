@@ -112,10 +112,16 @@
                 </div>
                 <div class="col-8">
                     <p id="text-contact">Be the first to know</p>
-                    <form method="post" action="RegisterServlet" class="align-items-center">
-                        <input type="text" name="email" placeholder="Email" class="form-control form-control-lg w-75 border-0 bg-white">
+                    <form method="post" action="RegisterServlet" class="d-flex flex-row align-items-center"
+                          name="myForm">
+                        <input type="text" name="email"
+                               pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+                               placeholder="Email" class="form-control form-control-lg w-75 border-0 bg-white mr-2"
+                               required>
                         <input type="submit" value="Subscribe" class="btn text-white py-2 px-5" id="subscribe-btn">
                     </form>
+                    <p class="card bg-danger text-white" id="fail">Please put fill email appropriately</p>
+                    <p class="card bg-success text-white" id="success">Subscription successful</p>
                 </div>
             </div>
         </div>
