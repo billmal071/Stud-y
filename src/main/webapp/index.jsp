@@ -49,9 +49,8 @@
         <h3 class="pb-5 mb-5" id="text-direct">How it Works?</h3>
         <div class="d-flex flex-row justify-content-center pt-3">
             <div>
-                <div class="position-images">
+                <div class="">
                     <img src="assets/img/phone.png" class="phone-1" alt="phone with image"/>
-                    <img src="assets/img/yellowcircle.png" class="circle-1" alt="yellow cirlce"/>
                 </div>
                 <div>
                     <h3 class="steps">step 1</h3>
