@@ -113,8 +113,8 @@
                 <div class="col-8">
                     <p id="text-contact">Be the first to know</p>
                     <form method="post" action="RegisterServlet" class="align-items-center">
-                        <input type="text" name="email">
-                        <input type="submit" value="Subscribe" class="btn text-white" id="subscribe-btn">
+                        <input type="text" name="email" placeholder="Email" class="form-control form-control-lg border-0 bg-white">
+                        <input type="submit" value="Subscribe" class="btn text-white py-2 px-5" id="subscribe-btn">
                     </form>
                 </div>
             </div>

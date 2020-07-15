@@ -2,6 +2,7 @@ package bean;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import bean.DBconnection;
 
 public class RegisterDao {
 
@@ -11,7 +12,7 @@ public class RegisterDao {
         Connection con = null;
         PreparedStatement preparedStatement = null;
         try {
-            con = DBconnection.createConnection();
+            con = DBconnection.getConnection();
             String query =  "insert into data(email) values(?)";
             preparedStatement = con.prepareStatement(query);
             preparedStatement.setString(1, email);

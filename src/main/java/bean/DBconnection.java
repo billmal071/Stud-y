@@ -7,7 +7,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DBconnection {
-    public static Connection createConnection() throws URISyntaxException, SQLException {
+    static Connection getConnection() throws URISyntaxException, SQLException {
         Connection con = null;
         /*Connection con = null;
         String url = "jdbc:mysql://localhost:3306/studye?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
