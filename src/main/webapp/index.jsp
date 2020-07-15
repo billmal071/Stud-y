@@ -111,10 +111,10 @@
                 </div>
                 <div class="col-8 d-flex flex-column align-self-center align-items-center">
                     <p class="text-white" id="text-contact">Be the first to know</p>
-                    <form method="post" action="RegisterServlet" name="myForm">
-                        <input type="text" name="email"
+                    <form method="post" action="RegisterServlet" name="myForm" class="d-flex flex-row">
+                        <input type="email" name="email"
                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                               placeholder="Email" class="bg-white mr-2"
+                               placeholder="Email" class="bg-white py-3 mr-2"
                                required>
                         <input type="submit" value="Subscribe" class="btn text-white py-2 px-5" id="subscribe-btn">
                     </form>

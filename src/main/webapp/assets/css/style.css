@@ -143,13 +143,14 @@ body {
 
 input[type='text'] {
     border: none;
+    border-radius: 3px;
     outline: none;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
     width: 100%;
-    display: inline-block;
+    display: inline;
 }
 
 #subscribe-btn {
@@ -157,7 +158,7 @@ input[type='text'] {
     font-size: 16px;
     line-height: 19px;
     border-radius: 0;
-    display: inline-block;
+    display: inline;
 }
 
 #fail, #success {
