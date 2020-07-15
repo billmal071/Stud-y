@@ -38,7 +38,8 @@
                 <h2 id="text-info" class="mt-5">We are launching an awesome application for students</h2>
                 <p id="text-sub">Stud-y is a mobile application that finds your texts books with a single picture</p>
                 <button class="btn text-capitalize py-3 px-5" id="see-how-it-works-btn"
-                        type="submit">see how it works <img src="assets/img/rightarrow.svg" class="pl-2" alt="right-arrow">
+                        type="submit">see how it works <img src="assets/img/rightarrow.svg" class="pl-2"
+                                                            alt="right-arrow">
                 </button>
             </div>
             <img src="assets/img/comingsoon.png" alt="coming soon" srcset="" class="mt-n5 pl-n5">
@@ -51,7 +52,7 @@
             <div>
                 <div class="">
                     <img src="assets/img/phone.png" class="phone" alt="phone with image"/>
-                    <img src="assets/img/yellowcircle.png" class="circle-1" alt="">
+                    <!--<img src="assets/img/yellowcircle.png" class="circle-1" alt="">-->
                 </div>
                 <div>
                     <h3 class="steps">step 1</h3>
@@ -61,7 +62,7 @@
             <div>
                 <div class="position-images">
                     <img src="assets/img/phone.png" class="phone" alt="phone with image"/>
-                    <img src="assets/img/greencircle.png" class="circle-2" alt="">
+                    <!--<img src="assets/img/greencircle.png" class="circle-2" alt="">-->
                 </div>
                 <div>
                     <h3 class="steps">step 2</h3>
@@ -71,7 +72,7 @@
             <div>
                 <div>
                     <img src="assets/img/phone.png" class="phone" alt="phone with image"/>
-                    <img src="assets/img/bluecircle.png" class="circle-3" alt="">
+                    <!--<img src="assets/img/bluecircle.png" class="circle-3" alt="">-->
                 </div>
                 <div>
                     <h3 class="steps">step 3</h3>
@@ -82,11 +83,45 @@
     </section>
 
     <section>
-        <h1>Hello World</h1>
-        <form method="post" action="RegisterServlet">
-            <input type="text" name="email">
-            <input type="submit" value="submit">
-        </form>
+        <div class="container">
+            <div class="d-flex flex-row justify-content-center">
+                <div>
+                    <h3>About Stud-y</h3>
+                    <p>Stud-y uses MiraGlance Technologies, an AI-ready computer vision solution, to scan texts and
+                        cross-reference them with our vast libraries of books and research papers.</p>
+                    <p>In partnerships with
+                        multiple vendors and journals, Stud-y is also your one-stop shop for academic resources.</p>
+                    <div>
+                        <button class="btn">AI-Ready</button>
+                        <button class="btn">Bookshop</button>
+                    </div>
+                </div>
+                <div>
+                    <img src="assets/img/phone%20skin%202.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-yellow">
+        <div class="container">
+            <div class="d-flex flex-row justify-content-center">
+                <div class="">
+                    <img src="assets/img/Looking%20through%201.png" alt="guy looking through binoculars">
+                </div>
+                <div class="">
+                    <p>Be the first to know</p>
+                    <form method="post" action="RegisterServlet" class="row">
+                        <div class="col-8">
+                            <input type="text" name="email">
+                        </div>
+                        <div class="col-4">
+                            <input type="submit" value="Subscribe" class="btn" id="subscribe-btn">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
 </main>
 

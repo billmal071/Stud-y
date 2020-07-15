@@ -3,6 +3,7 @@
     --grey: #686868;
     --blue: #3D6597;
     --gray: #848484;
+    --yellow: #E1B127;
 }
 
 body {
@@ -68,11 +69,11 @@ body {
 .position-images {
     position: relative;
 }
-/*
+
 .phone {
     position: relative;
     z-index: 3;
-}*/
+}
 
 .circle-1 {
     position: absolute;
@@ -104,6 +105,11 @@ body {
     font-size: 16px;
     line-height: 20px;
     color: var(--gray);
+}
+
+/* contact form */
+.bg-yellow {
+    background-color: var(--yellow);
 }
 
 
