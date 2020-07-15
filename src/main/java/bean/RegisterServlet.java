@@ -21,7 +21,7 @@ public class RegisterServlet extends HttpServlet {
         String email = request.getParameter("email");
 
         //unirest
-        String emailURL = "https://email.microapi.dev/send_welcome/";
+        String emailURL = "https://email.microapi.dev/send_confirmation/";
         HttpResponse<JsonNode> res = null;
         try {
             res = (HttpResponse<JsonNode>) Unirest.post(emailURL)
