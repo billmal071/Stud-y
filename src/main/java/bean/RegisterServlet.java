@@ -25,6 +25,7 @@ public class RegisterServlet extends HttpServlet {
         HttpResponse<JsonNode> res = null;
         try {
             res = (HttpResponse<JsonNode>) Unirest.post(emailURL)
+                    .header("accept", "application/json")
                     .field("recipient", email)
                     .field("body", "Thanks for subscribing")
                     .field("site_name", "https://greve-maison-78057.herokuapp.com/")
