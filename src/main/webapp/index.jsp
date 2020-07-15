@@ -49,7 +49,7 @@
     <section class="container px-3 justify-content-center">
         <h3 class="pb-5 mb-5" id="text-direct">How it Works?</h3>
         <div class="d-flex flex-row justify-content-center pt-3">
-            <div>
+            <div class="col-4">
                 <div class="">
                     <img src="assets/img/phone.png" class="phone" alt="phone with image"/>
                     <!--<img src="assets/img/yellowcircle.png" class="circle-1" alt="">-->
@@ -59,8 +59,8 @@
                     <p class="steps-text">Take a picture or screenshot of a portion of the book.</p>
                 </div>
             </div>
-            <div>
-                <div class="position-images">
+            <div class="col-4">
+                <div class="">
                     <img src="assets/img/phone.png" class="phone" alt="phone with image"/>
                     <!--<img src="assets/img/greencircle.png" class="circle-2" alt="">-->
                 </div>
@@ -69,7 +69,7 @@
                     <p class="steps-text">Tap ‘Upload’</p>
                 </div>
             </div>
-            <div>
+            <div class="col-4">
                 <div>
                     <img src="assets/img/phone.png" class="phone" alt="phone with image"/>
                     <!--<img src="assets/img/bluecircle.png" class="circle-3" alt="">-->
@@ -86,18 +86,18 @@
         <div class="container">
             <div class="d-flex flex-row justify-content-center">
                 <div>
-                    <h3>About Stud-y</h3>
-                    <p>Stud-y uses MiraGlance Technologies, an AI-ready computer vision solution, to scan texts and
+                    <h3 class="about-text">About Stud-y</h3>
+                    <p class="about-description">Stud-y uses MiraGlance Technologies, an AI-ready computer vision solution, to scan texts and
                         cross-reference them with our vast libraries of books and research papers.</p>
-                    <p>In partnerships with
+                    <p class="about-description">In partnerships with
                         multiple vendors and journals, Stud-y is also your one-stop shop for academic resources.</p>
-                    <div>
+                    <div class="d-flex flex-row">
                         <button class="btn">AI-Ready</button>
                         <button class="btn">Bookshop</button>
                     </div>
                 </div>
                 <div>
-                    <img src="assets/img/phone%20skin%202.png" alt="">
+                    <img src="assets/img/study-phone.png" alt="phone with study">
                 </div>
             </div>
         </div>
@@ -106,17 +106,17 @@
     <section class="bg-yellow">
         <div class="container">
             <div class="d-flex flex-row justify-content-center">
-                <div class="">
+                <div class="justify-content-left">
                     <img src="assets/img/Looking%20through%201.png" alt="guy looking through binoculars">
                 </div>
                 <div class="">
                     <p>Be the first to know</p>
-                    <form method="post" action="RegisterServlet" class="row">
+                    <form method="post" action="RegisterServlet" class="row form-control form-control-lg align-items-center">
                         <div class="col-8">
                             <input type="text" name="email">
                         </div>
                         <div class="col-4">
-                            <input type="submit" value="Subscribe" class="btn" id="subscribe-btn">
+                            <input type="submit" value="Subscribe" class="btn text-white" id="subscribe-btn">
                         </div>
                     </form>
                 </div>

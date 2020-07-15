@@ -48,13 +48,6 @@ body {
     color: var(--blue);
 }
 
-#subscribe-btn {
-    background-color: var(--blue);
-    font-size: 16px;
-    line-height: 19px;
-    border-radius: 0;
-}
-
 /* how it works */
 #text-direct {
     font-style: normal;
@@ -110,6 +103,13 @@ body {
 /* contact form */
 .bg-yellow {
     background-color: var(--yellow);
+}
+
+#subscribe-btn {
+    background-color: var(--blue);
+    font-size: 16px;
+    line-height: 19px;
+    border-radius: 0;
 }
 
 
