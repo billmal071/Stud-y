@@ -34,7 +34,7 @@
 <main>
     <section>
         <div class="d-flex flex-row justify-content-center">
-            <div class="container pl-5 ml-5 pt-5 align-items-center">
+            <div class="container pl-5 ml-5 pt-5 align-items-center" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
                 <h2 id="text-info" class="mt-5">We are launching an awesome application for students</h2>
                 <p id="text-sub">Stud-y is a mobile application that finds your texts books with a single picture</p>
                 <button class="btn text-capitalize py-3 px-5" id="see-how-it-works-btn"
@@ -42,7 +42,9 @@
                                                             alt="right-arrow">
                 </button>
             </div>
-            <img src="assets/img/comingsoon.png" alt="coming soon" srcset="" class="mt-n5 pl-n5">
+            <div uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                <img src="assets/img/comingsoon.png" alt="coming soon" srcset="" class="mt-n5 pl-n5">
+            </div>
         </div>
     </section>
 
