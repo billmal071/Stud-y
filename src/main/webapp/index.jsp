@@ -111,14 +111,14 @@
                     <img src="assets/img/Looking%20through%201.png" alt="guy looking through binoculars">
                 </div>
                 <div class="col-8">
-                    <p id="text-contact">Be the first to know</p>
-                    <form method="post" action="RegisterServlet" class="d-flex flex-row align-items-center"
+                    <p class="text-white" id="text-contact">Be the first to know</p>
+                    <form method="post" action="RegisterServlet" class="d-flex flex-row align-content-center"
                           name="myForm">
                         <input type="text" name="email"
-                               pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+                               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                                placeholder="Email" class="form-control form-control-lg w-75 border-0 bg-white mr-2"
                                required>
-                        <input type="submit" value="Subscribe" class="btn text-white py-5 px-5" id="subscribe-btn">
+                        <input type="submit" value="Subscribe" class="btn text-white py-3 px-5" id="subscribe-btn">
                     </form>
                     <p class="card bg-danger text-white py-3 d-none" id="fail">Please fill email appropriately</p>
                     <p class="card bg-success text-white py-3 d-none" id="success">Subscription successful</p>
@@ -131,6 +131,7 @@
 <footer>
 
 </footer>
+
 <script src="assets/js/app.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit-icons.min.js"></script>
