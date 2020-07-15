@@ -51,8 +51,7 @@
         <div class="d-flex flex-row justify-content-center pt-3">
             <div class="col-4 justify-content-center text-center">
                 <div class="">
-                    <img src="assets/img/phone.png" class="phone" alt="phone with image"/>
-                    <!--<img src="assets/img/yellowcircle.png" class="circle-1" alt="">-->
+                    <img src="assets/img/Frame37.png" alt="">
                 </div>
                 <div>
                     <h3 class="steps">step 1</h3>
@@ -61,8 +60,7 @@
             </div>
             <div class="col-4 justify-content-center text-center">
                 <div class="">
-                    <img src="assets/img/phone.png" class="phone" alt="phone with image"/>
-                    <!--<img src="assets/img/greencircle.png" class="circle-2" alt="">-->
+                    <img src="assets/img/Frame38.png" alt="">
                 </div>
                 <div>
                     <h3 class="steps">step 2</h3>
@@ -71,8 +69,7 @@
             </div>
             <div class="col-4 justify-content-center text-center">
                 <div>
-                    <img src="assets/img/phone.png" class="phone" alt="phone with image"/>
-                    <!--<img src="assets/img/bluecircle.png" class="circle-3" alt="">-->
+                    <img src="assets/img/Frame39.png" alt="">
                 </div>
                 <div>
                     <h3 class="steps">step 3</h3>
@@ -93,8 +90,8 @@
                     <p class="about-description">In partnerships with
                         multiple vendors and journals, Stud-y is also your one-stop shop for academic resources.</p>
                     <div class="d-flex flex-row">
-                        <button class="btn">AI-Ready</button>
-                        <button class="btn">Bookshop</button>
+                        <button class="btn" id="btn-ai">AI-Ready</button>
+                        <button class="btn" id="btn-bkshop">Bookshop</button>
                     </div>
                 </div>
                 <div class="col-6">
@@ -119,8 +116,12 @@
                                required>
                         <input type="submit" value="Subscribe" class="btn text-white py-3 px-5" id="subscribe-btn">
                     </form>
-                    <p class="card bg-danger text-white py-3" id="fail">Please fill email appropriately</p>
-                    <p class="card bg-success text-white py-3" id="success">Subscription successful</p>
+                    <p class="card bg-danger text-white py-3" id="fail">Please fill email appropriately
+                        <button type="button" class="close" id="close-f">&times;</button>
+                    </p>
+                    <p class="card bg-success text-white py-3" id="success">Subscription successful
+                        <button type="button" class="close" id="close-s">&times;</button>
+                    </p>
                 </div>
             </div>
         </div>
