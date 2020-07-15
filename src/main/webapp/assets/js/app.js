@@ -4,7 +4,7 @@ let form1 = document.forms["myForm"]["email"].value;
 let regexEmail = '[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$';
 
 function checkForInput() {
-    if (form1 == "" || regexEmail.test(form1) == false) {
+    if (form1 == "" || regexEmail.test(form1) === false) {
         setTimeout(document.getElementById("fail").style.display='block', 1000);
         document.getElementById('close-f').addEventListener('click', function () {
                 document.getElementById('fail').style.display='none';

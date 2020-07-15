@@ -1,6 +1,5 @@
 package bean;
 
-import com.google.gson.JsonObject;
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.JsonNode;
 import com.mashape.unirest.http.Unirest;
@@ -21,19 +20,20 @@ public class RegisterServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //Copying all the input parameters in to local variables
         String email = request.getParameter("email");
-
+        /*.field("recipient", email)
+                    .field("body", "Thanks for subscribing")
+                    .field("site_name", "https://greve-maison-78057.herokuapp.com/")
+                    .field("registration_link", "https://greve-maison-78057.herokuapp.com/")
+                    .field("sender", "billmal071@gmail.com")*/
         //unirest
         String emailURL = "https://email.microapi.dev/send_confirmation/";
         HttpResponse<JsonNode> res = null;
         try {
             res = Unirest.post(emailURL)
                     .header("Content-Type", "application/json")
-                    .field("[recipient", email)
-                    .field("body", "Thanks for subscribing")
-                    .field("site_name", "https://greve-maison-78057.herokuapp.com/")
-                    .field("registration_link", "https://greve-maison-78057.herokuapp.com/")
-                    .field("sender", "billmal071@gmail.com]")
+                    .body("{\"recipient\": " + email + ", \"body\": \"Thanks for subscribing\", \"site_name\": \"https://greve-maison-78057.herokuapp.com/\", \"registration_link\": \"https://greve-maison-78057.herokuapp.com/\", \"sender\": \"billmal071@gmail.com\"}")
                     .asJson();
+            System.out.println(res.getStatus());
         } catch (UnirestException e) {
             e.printStackTrace();
         }
