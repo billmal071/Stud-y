@@ -1,9 +1,9 @@
 :root {
     --black: #464646;
     --grey: #686868;
-    --blue: #3D6597;
+    --l-blue: #3D6597;
     --gray: #848484;
-    --yellow: #E1B127;
+    --l-yellow: #E1B127;
     --btn-color: #1D1E18;
 }
 
@@ -24,9 +24,9 @@ body {
 /* coming soon */
 #text-info {
     font-style: normal;
-    font-weight: 800;
-    font-size: 40px;
-    line-height: 49px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
     color: var(--black);
     text-align: left;
 }
@@ -38,51 +38,35 @@ body {
     line-height: 29px;
     color: var(--grey);
     text-align: left;
+    padding-right: 300px;
+    margin-bottom: 45px;
 }
 
 #see-how-it-works-btn {
-    border: 2px solid var(--blue);
+    border: 2px solid var(--l-blue);
     box-sizing: border-box;
     border-radius: 45px;
     font-size: 16px;
     line-height: 19px;
-    color: var(--blue) !important;
+    color: var(--l-blue) !important;
 }
 
 /* how it works */
-#text-direct {
+#my-6 {
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+#text-direct,
+#text-looks {
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 29px;
     text-align: center;
     color: var(--black);
+    margin-bottom: 120px;
     text-decoration: underline;
-}
-
-.position-images {
-    position: relative;
-}
-
-.phone {
-    position: relative;
-    z-index: 3;
-}
-
-.circle-1 {
-    position: absolute;
-    top: 47.5%;
-    left: -13.5%;
-}
-
-.circle-2 {
-    position: absolute;
-    top: 47.5%;
-}
-
-.circle-3 {
-    position: absolute;
-    top: 47.5%;
 }
 
 .steps {
@@ -104,6 +88,10 @@ body {
 }
 
 /* about stud-y */
+#my-7 {
+    margin-top: 300px;
+}
+
 .about-text {
     font-style: normal;
     font-weight: bold;
@@ -122,7 +110,8 @@ body {
     color: var(--gray);
 }
 
-#btn-ai, #btn-bkshop {
+#btn-ai,
+#btn-bkshop {
     border: 1px solid var(--btn-color);
     box-sizing: border-box;
     border-radius: 8px;
@@ -131,7 +120,7 @@ body {
 
 /* contact form */
 .bg-yellow {
-    background-color: var(--yellow);
+    background-color: var(--l-yellow);
 }
 
 #text-contact {
@@ -141,7 +130,7 @@ body {
     line-height: 29px;
 }
 
-input[type='text'] {
+input[type='email'] {
     border: none;
     border-radius: 3px;
     outline: none;
@@ -149,20 +138,90 @@ input[type='text'] {
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
-    width: 100%;
-    display: inline;
+    width: 400px;
 }
 
 #subscribe-btn {
-    background-color: var(--blue) !important;
+    background-color: var(--l-blue);
     font-size: 16px;
     line-height: 19px;
     border-radius: 0;
     display: inline;
 }
 
-#fail, #success {
+#fail,
+#success {
     display: none;
 }
 
 
+@media only screen and (max-width: 426px) {
+
+    /* nav */
+    #logo {
+        font-size: 30px;
+        line-height: 2px;
+    }
+
+    /* coming soon */
+    #text-info {
+        font-size: 28px;
+        line-height: 24px;
+    }
+
+    #text-sub {
+        padding-right: 20px;
+    }
+
+    /* how it works */
+    #my-6 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    #text-direct {
+        margin-bottom: 20px;
+    }
+
+    /* about stud-y */
+    #my-7 {
+        margin-top: 40px;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .about-description {
+        padding-right: 0;
+        text-align: justify;
+    }
+
+    #center-btn {
+        justify-content: center;
+    }
+
+    /* contact */
+    #alc {
+        align-self: center;
+    }
+
+    #text-contact {
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+    form {
+        align-self: center;
+    }
+
+    input[type='email'] {
+        width: 200px;
+    }
+
+    #subscribe-btn {
+        padding: 0 20px;
+        width: 200px;
+        margin-top: 20px;
+    }
+}
