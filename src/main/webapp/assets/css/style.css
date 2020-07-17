@@ -5,10 +5,20 @@
     --gray: #848484;
     --l-yellow: #E1B127;
     --btn-color: #1D1E18;
+    --bg-color: #FDFFFC;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-color) !important;
+}
+
+.img-small-screen {
+    order: 2;
+}
+
+.text-small-screen {
+    order: 1;
 }
 
 /* nav */
@@ -19,6 +29,7 @@ body {
     font-size: 64px;
     line-height: 89px;
     text-align: left;
+    margin-top: 10px;
 }
 
 /* coming soon */
@@ -118,9 +129,19 @@ body {
     font-weight: bold;
 }
 
+/* how it looks */
+.image-grid-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
 /* contact form */
 .bg-yellow {
     background-color: var(--l-yellow);
+}
+
+#pos-img {
+    z-index: 3;
 }
 
 #text-contact {
@@ -154,6 +175,22 @@ input[type='email'] {
     display: none;
 }
 
+/* footer */
+#footer-dark {
+    background-color: var(--btn-color);
+}
+
+.card {
+    border-radius: 0 !important;
+}
+
+#footer-text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+}
+
 
 @media only screen and (max-width: 426px) {
 
@@ -161,6 +198,7 @@ input[type='email'] {
     #logo {
         font-size: 30px;
         line-height: 2px;
+        margin-top: 15px;
     }
 
     /* coming soon */
@@ -197,8 +235,9 @@ input[type='email'] {
         text-align: justify;
     }
 
-    #center-btn {
-        justify-content: center;
+    /* how it looks */
+    .image-grid-box {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 
     /* contact */
@@ -223,5 +262,98 @@ input[type='email'] {
         padding: 0 20px;
         width: 200px;
         margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 426px) {
+
+    /* navbar */
+    #logo {
+        font-size: 40px;
+        line-height: 20px;
+        margin-top: 15px;
+    }
+
+    /* coming soon */
+    #text-sub {
+        padding-right: 0px;
+    }
+
+    /* how it works */
+
+
+    /*About study */
+    .about-text {
+        text-align: center;
+    }
+
+    .about-description {
+        padding-right: 0;
+    }
+
+    /* How it looks */
+    .image-grid-box {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+
+    /* contact */
+    #text-contact {
+        text-align: center !important;
+        margin-top: 20px;
+    }
+
+    #subscribe-btn {
+        width: 380px;
+    }
+
+    form {
+        align-self: center;
+        justify-content: center;
+    }
+
+    input[type='email'] {
+        width: 380px;
+    }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+
+    /* navbar */
+    #logo {
+        margin-top: 5px;
+    }
+
+    /* coming soon */
+    #mp-lt {
+        padding-top: 0 !important;
+    }
+
+    #text-info {
+        font-size: 28px;
+        line-height: 25px;
+    }
+
+    #text-sub {
+        padding-right: 20px;
+    }
+
+    .image-grid-box {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .img-small-screen {
+        order: 1;
+    }
+
+    .text-small-screen {
+        order: 2;
+    }
+
+    #center-btn {
+        justify-content: center;
     }
 }
