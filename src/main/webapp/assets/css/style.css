@@ -135,6 +135,10 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
+#mb-6 {
+    margin-bottom: 300px;
+}
+
 /* contact form */
 .bg-yellow {
     background-color: var(--l-yellow);

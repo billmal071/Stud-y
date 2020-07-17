@@ -116,31 +116,39 @@
 
 
         <!-- How It Looks -->
-        <section class="container px-3 justify-content-center"
+        <section class="container px-3 justify-content-center" id="mb-6"
             uk-scrollspy="cls: uk-animation-fade; target: >div; delay: 500; repeat: true">
             <h3 id="text-looks">How it looks</h3>
-            <div class="image-grid-box">
+            <div class="image-grid-box" uk-lightbox="animation: slide">
                 <div>
-                    <div>
-                        <a class="" href="#modal-group-1" uk-toggle>
-                            <img src="assets/img/design-1.png" alt="">
-                        </a>
-                    </div>
+                    <a class="uk-inline" href="assets/img/design-1.png" >
+                        <img src="assets/img/design-1.png" alt="design for product, image 1">
+                    </a>
                 </div>
                 <div>
-                    <img src="assets/img/design-2.png" alt="">
+                    <a class="uk-inline" href="assets/img/design-2.png">
+                        <img src="assets/img/design-2.png" alt="">
+                    </a>
                 </div>
                 <div>
-                    <img src="assets/img/design-3.png" alt="">
+                    <a class="uk-inline" href="assets/img/design-3.png">
+                        <img src="assets/img/design-3.png" alt="">
+                    </a>
                 </div>
                 <div>
-                    <img src="assets/img/design-4.png" alt="">
+                    <a class="uk-inline" href="assets/img/design-4.png">
+                        <img src="assets/img/design-4.png" alt="">
+                    </a>
                 </div>
                 <div>
-                    <img src="assets/img/design-5.png" alt="">
+                    <a class="uk-inline" href="assets/img/design-5.png">
+                        <img src="assets/img/design-5.png" alt="">
+                    </a>
                 </div>
                 <div>
-                    <img src="assets/img/design-6.png" alt="">
+                    <a class="uk-inline" href="assets/img/design-6.png">
+                        <img src="assets/img/design-6.png" alt="">
+                    </a>
                 </div>
             </div>
         </section>
