@@ -18,3 +18,8 @@ function checkForInput() {
             })
     }
 }
+
+/*
+document.getElementById('see-how-it-works-btn').addEventListener('click', () => {
+
+})*/

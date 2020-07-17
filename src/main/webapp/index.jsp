@@ -31,7 +31,7 @@
         <nav class="d-flex flex-row">
             <img src="assets/img/left%20cloud%20greenish%201.png" alt="left cloud greenish" style="width: 75%"
                 class="img-fluid">
-            <h2 id="logo" class="pl-n5 ml-n5">Stud-y</h2>
+            <h2 id="logo" class="pl-n5 ml-n5"> <img src="assets/img/book-open.svg" alt="" class="mr-2"> Stud-y</h2>
         </nav>
     </header>
 
@@ -39,12 +39,12 @@
         <!-- coming soon -->
         <section class="container">
             <div class="d-flex flex-md-row flex-column justify-content-center">
-                <div class="container ml-md-n5 pt-5 align-items-center text-small-screen" id="mp-lt"
+                <div class="container pt-5 align-items-center text-small-screen" id="mp-lt"
                     uk-scrollspy="cls: uk-animation-slide-right; repeat: false">
                     <h2 id="text-info" class="mt-5 pr-md-5">We are launching an awesome application for students</h2>
                     <p id="text-sub">Stud-y is a mobile application that finds your texts books with a single picture!
                     </p>
-                    <button class="btn text-capitalize py-3 px-5" id="see-how-it-works-btn" type="submit">see how it
+                    <button class="btn text-capitalize py-sm-3 px-sm-5" id="see-how-it-works-btn" type="submit">see how it
                         works <img src="assets/img/rightarrow.svg" class="pl-2" alt="right-arrow">
                     </button>
                 </div>
@@ -60,7 +60,7 @@
             <div class="d-flex flex-md-row flex-column justify-content-center pt-3"
                 uk-scrollspy="cls: uk-animation-slide-bottom; target: >div; delay: 300; repeat: false">
                 <div class="col-md-4 justify-content-center text-center">
-                    <div class="mt-3">
+                    <div class="mt-4 mt-md-1">
                         <img src="assets/img/step-1.png" alt="">
                     </div>
                     <div>
@@ -69,7 +69,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 justify-content-center text-center" uk-scrollspy-class="uk-animation-slide-top">
-                    <div class="mt-3">
+                    <div class="mt-4 mt-md-1">
                         <img src="assets/img/step-2.png" alt="">
                     </div>
                     <div>
@@ -78,7 +78,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 justify-content-center text-center">
-                    <div class="mt-3">
+                    <div class="mt-4 mt-md-1">
                         <img src="assets/img/step-3.png" alt="">
                     </div>
                     <div>
@@ -156,14 +156,14 @@
 
         <!-- contact -->
         <section class="bg-yellow">
-            <div class="container pt-4">
-                <div class="d-flex flex-md-row flex-column justify-content-center">
+            <div class="container pt-5">
+                <div class="d-flex flex-md-row flex-column justify-content-center pt-5">
                     <div class="justify-content-left col-md-4 ml-md-n5 mr-md-5" id="alc"
                         uk-scrollspy="cls: uk-animation-slide-right; repeat: false">
                         <img src="assets/img/Looking%20through%201.png" alt="guy looking through binoculars"
                             id="pos-img">
                     </div>
-                    <div class="col-md-8 d-flex flex-column align-self-center ml-md-5"
+                    <div class="col-md-8 d-flex flex-column align-self-center ml-md-5 pb-md-5"
                         uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
                         <p class="text-white text-left" id="text-contact">Be the first to know</p>
                         <form method="post" action="RegisterServlet" name="myForm"
