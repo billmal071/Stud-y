@@ -1,9 +1,11 @@
 package bean;
 
+import com.google.gson.Gson;
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.JsonNode;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
+import org.json.JSONObject;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -28,10 +30,12 @@ public class RegisterServlet extends HttpServlet {
         //unirest
         String emailURL = "https://email.microapi.dev/send_confirmation/";
         HttpResponse<JsonNode> res = null;
+        String apiRequest = "{\"recipient\": " + email + ", \"body\": \"Thanks for subscribing\", \"site_name\": \"https://greve-maison-78057.herokuapp.com/\", \"registration_link\": \"https://greve-maison-78057.herokuapp.com/\", \"sender\": \"billmal071@gmail.com\"}";
+        String jsonRequest = new Gson().toJson(apiRequest);
         try {
             res = Unirest.post(emailURL)
                     .header("Content-Type", "application/json")
-                    .body("{\"recipient\": " + email + ", \"body\": \"Thanks for subscribing\", \"site_name\": \"https://greve-maison-78057.herokuapp.com/\", \"registration_link\": \"https://greve-maison-78057.herokuapp.com/\", \"sender\": \"billmal071@gmail.com\"}")
+                    .body(jsonRequest)
                     .asJson();
             System.out.println(res.getStatus());
         } catch (UnirestException e) {
