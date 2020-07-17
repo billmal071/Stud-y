@@ -168,8 +168,7 @@
                         <p class="text-white text-left" id="text-contact">Be the first to know</p>
                         <form method="post" action="RegisterServlet" name="myForm"
                             class="d-flex flex-md-row flex-column">
-                            <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                                placeholder="Email" class="bg-white py-3 pl-3 mr-2" required>
+                            <input type="email" name="email" placeholder="Email" class="bg-white py-3 pl-3 mr-2">
                             <input type="submit" value="Subscribe" class="btn text-white py-2 px-md-5"
                                 id="subscribe-btn">
                         </form>

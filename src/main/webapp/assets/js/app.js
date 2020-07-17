@@ -1,6 +1,6 @@
 document.getElementById('subscribe-btn').addEventListener('click', checkForInput);
 
-let form1 = document.forms["myForm"]["email"].value;
+let form1 = document.forms.myForm.email.value;
 let regexEmail = '[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$';
 
 function checkForInput() {
