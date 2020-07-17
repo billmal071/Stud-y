@@ -64,7 +64,7 @@ body {
 
 #see-how-it-works-btn:hover {
     background-color: var(--l-blue);
-    color: var(--bg-color);
+    color: white !important;
 }
 
 /* how it works */
